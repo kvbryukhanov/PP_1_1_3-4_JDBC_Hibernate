@@ -22,8 +22,7 @@ public class Util {
         try (InputStream inputStream = Util.class.getClassLoader().
                 getResourceAsStream("application.properties")) {
             prop.load(inputStream);
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
